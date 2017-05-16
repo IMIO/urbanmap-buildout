@@ -23,6 +23,7 @@ RUN make
 EXPOSE 8000:8000
 
 WORKDIR /srv/urbanmap_buildout/geode.urbanmap
+VOLUME /srv/urbanmap_buildout/geode.urbanmap/urbanmap/public
 
 ADD configuration.ini /srv/urbanmap_buildout/geode.urbanmap/configuration.ini
 ADD config.yaml /srv/urbanmap_buildout/geode.urbanmap/print/config.yaml
